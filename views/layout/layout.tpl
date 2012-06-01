@@ -49,8 +49,8 @@
             </div>
         </div>
         <div class="clearfix"/>
-        <div class="container" style="margin-top:100px">
-<?php foreach ($d['messages'] as $type => $message): ?>
+        <div class="container" style="margin-top:75px">
+<?php @foreach ($d['messages'] as $type => $message): ?>
             <div class="alert <?php echo $type ?>">
                 <button class="close" data-dismiss="alert">×</button>
                 <?php echo $message ?>
