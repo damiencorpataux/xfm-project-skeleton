@@ -1,3 +1,0 @@
-[submodule "lib/xfm"]
-	path = lib/xfm
-	url = git://github.com/damiencorpataux/xfm-php.git
