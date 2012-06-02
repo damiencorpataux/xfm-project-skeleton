@@ -7,3 +7,6 @@ Steps to make it work:
 * Apache
   * Enable 'rewrite' module: a2enmod rewrite
   * Configure your directory with "AllowOverrides All"
+
+
+Point your browser to: example.com/path/to/git/project/**public/**
