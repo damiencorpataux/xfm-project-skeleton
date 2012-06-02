@@ -1,12 +1,7 @@
-xfm-project-skeleton
-====================
+This stub is a basic project with:
 
-Steps to make it work:
-* Xfm git submodule
-  * Initialize submodule: git submodule init && git submodule update
-* Apache
-  * Enable 'rewrite' module: a2enmod rewrite
-  * Configure your directory with "AllowOverride All"
+- a home controller
+- an error controller for exception handling
 
 
-Point your browser to: example.com/path/to/git/project/**public/**
+It is suitable for a simple web-site containing a bunch of pages.
