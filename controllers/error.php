@@ -51,5 +51,3 @@ class ErrorController extends xWebController {
         return xView::load('error/report')->render();
     }
 }
-
-?>
