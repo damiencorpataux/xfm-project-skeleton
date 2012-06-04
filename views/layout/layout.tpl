@@ -59,9 +59,7 @@
             </div>
 <?php endforeach ?>
             <?php echo $d['html']['content'] ?>
-            <footer>
-                &copy; is becoming a suspiscious concept. Please share.
-            </footer>
+            <?php echo xView::load('layout/footer') ?>
         </div>
 
     </body>
