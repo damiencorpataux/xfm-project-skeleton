@@ -1,0 +1,72 @@
+#: controllers/error.php:42
+msgid "Report error"
+msgstr ""
+
+#: controllers/error.php:49
+msgid "Error details have been sent to our team"
+msgstr ""
+
+#: controllers/error.php:50
+msgid "Error details could not be sent to our team :("
+msgstr ""
+
+#: controllers/home.php:6
+msgid "Welcome here"
+msgstr ""
+
+#: controllers/home.php:7
+msgid "Home"
+msgstr ""
+
+#: views/error/display.php:8
+msgid "The data you provided is not correct"
+msgstr ""
+
+#: views/error/display.php:9
+#: views/error/display.php:10
+msgid "You are not allowed to access this resource"
+msgstr ""
+
+#: views/error/display.php:11
+msgid "The page you requested was not found"
+msgstr ""
+
+#: views/error/display.php:12
+msgid "An unexpected error happened"
+msgstr ""
+
+#: views/error/display.php:13
+msgid "An unknown error happened"
+msgstr ""
+
+#: views/error/display.php:17
+msgid "Page not found"
+msgstr ""
+
+#: views/error/display.php:18
+msgid "Error"
+msgstr ""
+
+#: views/error/display.tpl:12
+msgid "Go back"
+msgstr ""
+
+#: views/error/display.tpl:14
+msgid "return to the homepage"
+msgstr ""
+
+#: views/error/display.tpl:15
+msgid "or"
+msgstr ""
+
+#: views/error/display.tpl:17
+msgid "report this error"
+msgstr ""
+
+#: views/i18n/lang-selection-dropdown.tpl:15
+msgid "Language"
+msgstr ""
+
+#: views/layout/footer.tpl:3
+msgid "is becoming a suspiscious concept. Please share."
+msgstr ""
