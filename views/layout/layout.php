@@ -11,6 +11,7 @@ class LayoutLayoutView extends xView {
                 // xContext serialization
                 xUtil::url('a/js/view/context.js'),
                 // Bootstrap CSS js
+                'http://twitter.github.com/bootstrap/assets/js/jquery.js',
                 'http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js',
                 'http://twitter.github.com/bootstrap/assets/js/bootstrap-alert.js',
                 'http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js',
