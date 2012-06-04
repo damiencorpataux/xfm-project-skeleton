@@ -1,3 +1,4 @@
 <footer>
-    &copy; is becoming a suspiscious concept. Please share.
+    &copy;
+    <?php echo _('is becoming a suspiscious concept. Please share.'); ?>
 </footer>
