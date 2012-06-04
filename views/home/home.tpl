@@ -1,3 +1,3 @@
 <h1>Home</h1>
 
-<p>Welcome here.</p>
+<p><?php echo $d['welcome-text'] ?></p>
