@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                     </a>
                     <a class="brand" href="#">
-                        Site template
+                        App template
                     </a>
                     <div class="nav-collapse pull-right">
                         <ul class="nav">
