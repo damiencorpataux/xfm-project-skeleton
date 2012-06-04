@@ -37,6 +37,9 @@
                     <a class="brand" href="#">
                         App template
                     </a>
+                    <ul class="nav pull-right">
+<?php echo xView::load('i18n/lang-selection-dropdown') ?>
+                    </ul>
                     <div class="nav-collapse pull-right">
                         <ul class="nav">
                             <li class="active"><a href="#">Home</a></li>

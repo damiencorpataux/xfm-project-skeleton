@@ -3,6 +3,7 @@
 class HomeController extends xWebController {
 
     function defaultAction() {
-        return xView::load('home/home')->render();
+        $data['welcome-text'] = _('Welcome here').'!';
+        return xView::load('home/home', $data)->render();
     }
 }
