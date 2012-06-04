@@ -84,13 +84,13 @@ Don't foget to put a header on top of your .po files:
 ```
 msgid ""
 msgstr ""
-"Project-Id-Version:"
-"POT-Creation-Date: 2005-07-21 10:05+0000"
-"PO-Revision-Date: 2005-06-15 15:58+0100"
-"Last-Translator: Somebody <somebody@example.com>"
-"Language-Team:"
-"MIME-Version: 1.0"
-"Content-Type: text/plain; charset=ISO-8859-1"
-"Content-Transfer-Encoding: 8bit"
-
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-15 14:06+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 ```
