@@ -1,0 +1,1 @@
+../lib/xfm/scripts/i18n/testgettext.php
