@@ -76,3 +76,21 @@ vi ...
 php po2mo.php
 sudo apache2ctl graceful
 ```
+
+
+.po files header
+================
+Don't foget to put a header on top of your .po files:
+```
+msgid ""
+msgstr ""
+"Project-Id-Version:"
+"POT-Creation-Date: 2005-07-21 10:05+0000"
+"PO-Revision-Date: 2005-06-15 15:58+0100"
+"Last-Translator: Somebody <somebody@example.com>"
+"Language-Team:"
+"MIME-Version: 1.0"
+"Content-Type: text/plain; charset=ISO-8859-1"
+"Content-Transfer-Encoding: 8bit"
+
+```
