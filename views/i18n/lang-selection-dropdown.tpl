@@ -12,7 +12,8 @@ $available = $lang_config ? $lang_config->toArray() : array();
 
 <li class="xfm-lang-selection dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-        Language <b class="caret"></b>
+        <?php echo _('Language') ?>
+        <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
 <?php foreach ($available as $alias => $locale) {
