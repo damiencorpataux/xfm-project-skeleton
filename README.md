@@ -76,6 +76,8 @@ cd /var/www/app/i18n/po
 vi fr.po
 vi de.po
 php po2mo.php
+
+# restart your web server to apply changes
 sudo apache2ctl graceful
 ```
 
