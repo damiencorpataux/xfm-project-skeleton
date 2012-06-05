@@ -67,12 +67,14 @@ php po2mo.php
 # restart your apache server to apply change (if applicable)
 sudo apache2ctl graceful
 
-# adding new translation strings to your .po file(s)
+# automagically add new translation strings to your .po file(s)
 cd /var/www/app/i18n
 php po_update.php
+
+# edit translations strings
 cd /var/www/app/i18n/po
 vi fr.po
-vi ...
+vi de.po
 php po2mo.php
 sudo apache2ctl graceful
 ```
@@ -80,7 +82,7 @@ sudo apache2ctl graceful
 
 .po files header
 ================
-Don't foget to put a header on top of your .po files:
+Don't foget to put the following header on top of your .po files:
 ```
 msgid ""
 msgstr ""
