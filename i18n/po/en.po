@@ -63,7 +63,7 @@ msgstr ""
 msgid "report this error"
 msgstr ""
 
-#: views/i18n/lang-selection-dropdown.tpl:15
+#: views/i18n/lang-selection-dropdown.tpl:18
 msgid "Language"
 msgstr ""
 

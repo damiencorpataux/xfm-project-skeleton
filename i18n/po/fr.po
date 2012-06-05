@@ -75,7 +75,7 @@ msgstr "ou"
 msgid "report this error"
 msgstr "signaler cette erreur"
 
-#: views/i18n/lang-selection-dropdown.tpl:15
+#: views/i18n/lang-selection-dropdown.tpl:18
 msgid "Language"
 msgstr "Langue"
 
