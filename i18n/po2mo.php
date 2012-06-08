@@ -1,1 +1,0 @@
-../lib/xfm/scripts/i18n/po2mo.php
