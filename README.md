@@ -11,7 +11,7 @@ How to setup a new language (debian)
 ```bash
 # Test if gettext is already working
 # (note that testgettext tests the "fr_CH.utf8" locale, you can edit the script to change it)
-cd /var/www/app/i18n/
+cd /var/www/app/scripts/i18n/
 php testgettext.php
 
 # install gettext on your system
@@ -38,7 +38,7 @@ sudo bash -c "cat /usr/share/i18n/SUPPORTED | grep -i 'en_us.utf' >> /etc/locale
 sudo locale-gen
 
 # gettext should work
-cd /var/www/app/i18n/
+cd /var/www/app/scripts/i18n/
 php testgettext.php
 
 #
@@ -52,12 +52,12 @@ How to translate a language
 # generate base po files from your site contents
 # this will create a .po file for each of your
 # configured languages in your default.ini
-cd /var/www/app/i18n
+cd /var/www/app/scripts/i18n
 php po_update.php
 
 # edit the generated/updated .po files and create the translations
 # (note that the en.po file is usually empty if you wrote your templates in english)
-cd /var/www/app/i18n/po
+cd /var/www/app/scripts/i18n/po
 vi fr.po
 vi de.po
 
@@ -67,14 +67,19 @@ php po2mo.php
 # restart your apache server to apply change (if applicable)
 sudo apache2ctl graceful
 
+# modify your controllers and views (adding/changing/deleting translations strings)
+
 # automagically add new translation strings to your .po file(s)
-cd /var/www/app/i18n
+cd /var/www/app/scripts/i18n
 php po_update.php
 
 # edit translations strings
 cd /var/www/app/i18n/po
 vi fr.po
 vi de.po
+
+# recompile .mo files
+cd /var/www/app/scripts/i18n
 php po2mo.php
 
 # restart your web server to apply changes
