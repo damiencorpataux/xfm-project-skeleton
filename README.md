@@ -25,5 +25,5 @@ php database.php
 Notes
 =====
 
-Look at the **sql/** directory, containing the sql to execute in order to create the database,
-prefixed with a number that defines execution order.
+Look at the **sql/** directory, containing the sql files to execute in order to create the database.
+Filenames are prefixed with a number that defines execution order.
