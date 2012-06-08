@@ -33,6 +33,7 @@ sudo bash -c "cat /usr/share/i18n/SUPPORTED | grep -i 'fr_ch.utf' >> /etc/locale
 sudo bash -c "cat /usr/share/i18n/SUPPORTED | grep -i 'de_ch.utf' >> /etc/locale.gen"
 sudo bash -c "cat /usr/share/i18n/SUPPORTED | grep -i 'en_gb.utf' >> /etc/locale.gen"
 sudo bash -c "cat /usr/share/i18n/SUPPORTED | grep -i 'en_us.utf' >> /etc/locale.gen"
+sudo bash -c "cat /usr/share/i18n/SUPPORTED | grep -i 'ja_jp.utf' >> /etc/locale.gen"
 
 # regenerate locales
 sudo locale-gen
