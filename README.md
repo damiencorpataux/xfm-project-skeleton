@@ -17,7 +17,7 @@ Either:
 - or change **default.ini** db configured user and password
 
 ```bash
-cd /var/www/scripts/deploy
+cd /var/www/app/scripts/deploy
 php database.php
 ```
 
