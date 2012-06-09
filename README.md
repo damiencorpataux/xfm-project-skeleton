@@ -40,8 +40,6 @@ sudo locale-gen
 # gettext should work
 cd /var/www/app/scripts/i18n/
 php testgettext.php
-
-#
 ```
 
 
