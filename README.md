@@ -47,7 +47,7 @@ How to translate a language
 ===========================
 
 ```bash
-# generate base po files from your site contents
+# generate/update .po files from your site contents
 # this will create a .po file for each of your
 # configured languages in your default.ini
 cd /var/www/app/scripts/i18n
@@ -59,14 +59,14 @@ cd /var/www/app/scripts/i18n/po
 vi fr.po
 vi de.po
 
-# generate the compiled .mo file from the .po files
+# (re)generate the compiled .mo file from the .po files
 php po2mo.php
 
 # restart your apache server to apply change (if applicable)
 sudo apache2ctl graceful
 
 # modify your controllers and views (adding/changing/deleting translations strings)
-# and start over at step 1
+# and start over at step 1 !
 ```
 
 
