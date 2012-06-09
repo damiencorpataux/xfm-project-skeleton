@@ -14,7 +14,8 @@ How to setup mysql database
 
 Either:
 - create a database user according **default.ini** db configuration
-- or change **default.ini** db configured user and password
+- or change **default.ini** db configured user and password to suit
+  the existing database user you want to use
 
 ```bash
 cd /var/www/app/scripts/deploy
