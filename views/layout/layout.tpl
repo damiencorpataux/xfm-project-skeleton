@@ -37,6 +37,7 @@
                     <a class="brand" href="#">
                         App template
                     </a>
+                    <!-- Uncomment and modify to add top-right navigation links
                     <div class="nav-collapse pull-right">
                         <ul class="nav">
                             <li class="active"><a href="#">Home</a></li>
@@ -44,6 +45,7 @@
                             <li><a href="#contact">Impressum</a></li>
                         </ul>
                     </div>
+                    -->
                 </div>
             </div>
         </div>
