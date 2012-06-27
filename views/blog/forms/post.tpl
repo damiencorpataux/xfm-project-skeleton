@@ -21,7 +21,7 @@
   <input id="blog-post-title" name="title" type="text" value="<?php echo $d['title'] ?>"/>
 
   <label for="blog-post-body">Body:</label>
-  <textarea id="blog-post-body" name="body" style="height:200px"><?php echo $d['title'] ?></textarea>
+  <textarea id="blog-post-body" name="body" style="height:200px"><?php echo $d['body'] ?></textarea>
 
   <input id="blog-post-submit" type="submit" value="Post it" class="btn btn-info btn-large pull-right"/>
   <a href="<?php echo xWebFront::previous_url() ?>" class="btn btn-large pull-right">Cancel</a>
