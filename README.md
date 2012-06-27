@@ -12,19 +12,20 @@ It is suitable for a simple web-site containing a bunch of dynamic, database-rel
 How to setup mysql database
 ===========================
 
-Either:
+**Either:**
 - create a database user according **default.ini** db configuration
 - or change **default.ini** db configured user and password to suit
   the existing database user you want to use
 
-Then:
+**Then:**
 ```bash
 cd /var/www/app/scripts/deploy
 php database.php
 ```
 
-Finally:
+**Finally:**
 - Point your browser to your application URL (eg. http://localhost/app/public if you followed the wiki [Deploying basic-project stub](https://github.com/damiencorpataux/xfm-project-skeleton/wiki) chapter).
+
 
 Notes
 =====
