@@ -9,27 +9,30 @@ class LayoutLayoutView extends xView {
             ),
             'js' => array(
                 // xContext serialization
-                xUtil::url('a/js/view/context.js'),
-                // Bootstrap CSS js
-                'http://twitter.github.com/bootstrap/assets/js/jquery.js',
-                'http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js',
-                'http://twitter.github.com/bootstrap/assets/js/bootstrap-alert.js',
-                'http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js',
-                'http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js',
-                'http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js',
-                'http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js',
-                'http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js',
-                'http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js',
-                'http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js',
-                'http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js',
-                'http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js',
-                'http://twitter.github.com/bootstrap/assets/js/bootstrap-typeahead.js',
+                xUtil::url('assets/js/view/context.js'),
+                // Bootstrap.css js
+                xUtil::url('assets/bootstrap.css/jquery.js'),
+                xUtil::url('assets/bootstrap.css/bootstrap-transition.js'),
+                xUtil::url('assets/bootstrap.css/bootstrap-alert.js'),
+                xUtil::url('assets/bootstrap.css/bootstrap-modal.js'),
+                xUtil::url('assets/bootstrap.css/bootstrap-dropdown.js'),
+                xUtil::url('assets/bootstrap.css/bootstrap-scrollspy.js'),
+                xUtil::url('assets/bootstrap.css/bootstrap-tab.js'),
+                xUtil::url('assets/bootstrap.css/bootstrap-tooltip.js'),
+                xUtil::url('assets/bootstrap.css/bootstrap-popover.js'),
+                xUtil::url('assets/bootstrap.css/bootstrap-button.js'),
+                xUtil::url('assets/bootstrap.css/bootstrap-collapse.js'),
+                xUtil::url('assets/bootstrap.css/bootstrap-carousel.js'),
+                xUtil::url('assets/bootstrap.css/bootstrap-typeahead.js'),
             ),
             'css' => array(
-                'http://twitter.github.com/bootstrap/assets/css/bootstrap.css',
-                'http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css',
+                // Bootstrap.css CSS
+                xUtil::url('assets/bootstrap.css/bootstrap.css'),
+                xUtil::url('assets/bootstrap.css/bootstrap-responsive.css'),
                 // Custom CSS
-                xUtil::url('assets/css/custom.css')
+                xUtil::url('assets/css/bootstrap-tweaks.css'),
+                xUtil::url('assets/css/custom-fonts.css'),
+                xUtil::url('assets/css/custom.css'),
             )
         ));
     }
