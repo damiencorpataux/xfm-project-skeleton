@@ -23,6 +23,8 @@ cd /var/www/app/scripts/deploy
 php database.php
 ```
 
+Finally:
+Point your browser to your application URL (eg. http://localhost/app/public if you followed [[Deploying basic-project stub|Home]])
 
 Notes
 =====
