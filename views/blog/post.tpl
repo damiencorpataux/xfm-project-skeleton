@@ -5,7 +5,7 @@
 <blockquote><small>
   posted <?php echo xUtil::timeago($d['post']['created']) ?>
 </small></blockquote>
-<?php echo $d['post']['body'] ?>
+<?php echo nl2br($d['post']['body']) ?>
 <hr/>
 
 <h3>Comments</h3>

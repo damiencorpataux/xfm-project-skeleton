@@ -16,4 +16,8 @@ class BlogPostModel extends xModelMysql {
         'title' => 'mandatory',
         'body' => 'mandatory'
     );
+
+    var $allow_html = array(
+        'body' => '<b><i><a>'
+    );
 }

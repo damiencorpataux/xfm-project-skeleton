@@ -38,6 +38,9 @@ class BlogController extends xWebController {
             'creator_name', 'creator_email', 'creator_website', 'body'
         ));
         if ($comment_data) {
+            // Adds blog-post id foreign key field
+            $comment_data['blog-post_id'] = $id;
+            // Manages
             $comment_data['blog-post_id'] = $id;
             try {
                 $r = xModel::load('blog-post-comment', $comment_data)->put();

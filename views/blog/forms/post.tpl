@@ -22,6 +22,14 @@
 
   <label for="blog-post-body">Body:</label>
   <textarea id="blog-post-body" name="body" style="height:200px"><?php echo $d['body'] ?></textarea>
+  <div>
+    Allowed html tags in body:
+    <?php
+        $tags = xModel::load('blog-post')->allow_html['body'];
+        $tags = preg_replace('/\<(\w*)\>/', '&lt;$1&gt; ', $tags);
+        echo $tags;
+    ?>
+  </div>
 
   <input id="blog-post-submit" type="submit" value="Post it" class="btn btn-info btn-large pull-right"/>
   <a href="<?php echo xWebFront::previous_url() ?>" class="btn btn-large pull-right">Cancel</a>
