@@ -14,8 +14,8 @@ It is suitable for a simple web-site containing a bunch of dynamic, database-rel
 How to setup mysql database
 ===========================
 
-**Either:**
-- create a database user according **default.ini** db configuration
+**First:**
+- either create a database user according **default.ini** db configuration
 - or change **default.ini** db configured user and password to suit
   the existing database user you want to use
 
