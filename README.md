@@ -24,7 +24,7 @@ php database.php
 ```
 
 Finally:
-Point your browser to your application URL (eg. http://localhost/app/public if you followed the wiki [Deploying basic-project stub](https://github.com/damiencorpataux/xfm-project-skeleton/wiki)).
+- Point your browser to your application URL (eg. http://localhost/app/public if you followed the wiki [Deploying basic-project stub](https://github.com/damiencorpataux/xfm-project-skeleton/wiki) chapter).
 
 Notes
 =====
