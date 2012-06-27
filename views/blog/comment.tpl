@@ -1,5 +1,4 @@
-<blockquote>
-  <?php echo $d['body'] ?>
+<blockquote><?php echo $d['body'] ?>
   <small>
     posted
     <?php echo xUtil::timeago($d['created']) ?>
