@@ -18,7 +18,7 @@ How to setup mysql database
   the existing database user you want to use
 
 **Then:**
-```bash
+* ```bash
 cd /var/www/app/scripts/deploy
 php database.php
 ```
