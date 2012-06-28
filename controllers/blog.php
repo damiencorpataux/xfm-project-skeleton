@@ -6,18 +6,42 @@ class BlogController extends xWebController {
         return $this->indexAction();
     }
 
+    /**
+     * Displays latest posts
+     */
     function indexAction() {
+        $params = array(
+            'visible' => true,
+            'xorder' => 'DESC',
+            'xorder_by' => 'created',
+            'xlimit' => 10
+        );
+        // Manages search query
+        if (@$this->params['search']) $params = array_merge($params, array(
+            'title' => "%{$this->params['search']}%",
+            'title_comparator' => 'LIKE',
+            'body' => "%{$this->params['search']}%",
+            'body_comparator' => 'LIKE',
+            'body_operator' => 'OR',
+            'xlimit' => null
+        ));
+        // Retrieves and displays posts
         $data = array(
-            'posts' => xModel::load('blog-post', array(
-                'visible' => true,
-                'xorder' => 'DESC',
-                'xorder_by' => 'created',
-                'xlimit' => 10
-             ))->get()
+            'posts' => xModel::load('blog-post', $params)->get(),
+            'params' => $this->params
         );
         return xView::load('blog/index', $data)->render();
     }
 
+    /**
+     * Displays
+     *  - latest posts (see indexAction)
+     *  - or post id if 'id' parameter is given
+     * along with
+     *  - comments
+     *  - and new comment form (including comment creation logic)
+     * @see indexAction
+     */
     function postsAction() {
         $id = $this->params['id'];
         // Displays posts index if no 'id' given
@@ -40,20 +64,9 @@ class BlogController extends xWebController {
         if ($comment_data) {
             // Adds blog-post id foreign key field
             $comment_data['blog-post_id'] = $id;
-            // Manages
-            $comment_data['blog-post_id'] = $id;
-            try {
-                $r = xModel::load('blog-post-comment', $comment_data)->put();
-                // Avoids reposting on page refresh
-                header('Location: '.xUtil::url("blog/posts/{$id}"));
-            } catch (xException $e) {
-                if ($e->data['invalids']) {
-                    // TODO: Fix layout view to display xWebFront messages (in basic-project branch)
-                    xWebFront::messages('Wrong!');
-                }
-            }
+            $this->_put('blog-post-comment', $comment_data, "blog/posts/{$id}");
         }
-        // Retrieves and display requested post
+        // Retrieves and display requested post & comments
         $data = array(
             'post' => $post,
             'comments' => $comments,
@@ -62,25 +75,39 @@ class BlogController extends xWebController {
         return xView::load('blog/post', $data)->render();
     }
 
+    /**
+     * Displays new post form (including post creation logic)
+     */
     function newAction() {
         // Manages posted data insertion in database
         $data = xUtil::filter_keys($this->params, array('title', 'body'));
-        if ($data) {
-            try {
-                $r = xModel::load('blog-post', $data)->put();
-            } catch (xException $e) {
-                if ($e->data['invalids']) {
-                    // TODO: Fix layout view to display xWebFront messages (in basic-project branch)
-                    xWebFront::messages('Wrong!');
-                }
+        if ($data) $this->_put('blog-post', $data, "blog/posts/%s");
+        // Displays post form (if not redirected by _put())
+        return xView::load('blog/forms/post', $this->params);
+    }
+
+    /**
+     * Factorized 'put' data method.
+     * @param string Name of the model to use.
+     * @param array Data to be put.
+     * @param string|null If given, redirects to url (avoiding reput on page refresh).
+     *                    You can use %s in the given string, which will be substituted with insert id.
+     */
+    private function _put($modelname, $data, $redirect_url = null) {
+        try {
+            $r = xModel::load($modelname, $data)->put();
+            // Avoids reposting on page refresh
+            if ($redirect_url) {
+                $redirect_url = sprintf($redirect_url, $r['xinsertid']);
+                header('Location: '.xUtil::url($redirect_url));
             }
-        }
-        // Manages output according insertion success/failure
-        if (@$r['xsuccess']) {
-            $id = $r['xinsertid'];
-            header('Location: '.xUtil::url("blog/posts/{$id}"));
-        } else {
-            return xView::load('blog/forms/post', $this->params);
+        } catch (xException $e) {
+            if ($e->data['invalids']) {
+                xWebFront::messages(
+                    xView::load('blog/forms/msg-invalids', $e->data['invalids']),
+                    'error'
+                );
+            }
         }
     }
 }
