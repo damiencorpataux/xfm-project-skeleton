@@ -34,7 +34,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="#">
+                    <a class="brand" href="<?php echo u() ?>">
                         App template
                     </a>
                     <!-- Uncomment and modify to add top-right navigation links
@@ -51,12 +51,7 @@
         </div>
         <div class="clearfix"/>
         <div class="container" style="margin-top:75px">
-<?php if (is_array($d['messages'])) foreach ($d['messages'] as $type => $message): ?>
-            <div class="alert <?php echo $type ?>">
-                <button class="close" data-dismiss="alert">×</button>
-                <?php echo $message ?>
-            </div>
-<?php endforeach ?>
+            <?php echo xView::load('layout/messages') ?>
             <?php echo $d['html']['content'] ?>
             <?php echo xView::load('layout/footer') ?>
         </div>
