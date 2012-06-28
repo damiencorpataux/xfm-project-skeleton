@@ -1,5 +1,12 @@
-<h1>Recent posts</h1>
+<form class="pull-right">
+<?php $search = $d['params']['search'] ?>
+<?php if ($search): ?>
+  <a href="?" class="btn close btn-mini btn-danger pull-left" style="position:relative;top:3px;right:3px;">×</a>
+<?php endif ?>
+  <input type="text" name="search" value="<?php echo $search ?>" placeholder="Search posts (then press enter)">
+</form>
 
+<h1>Recent posts</h1>
 <a href="<?php echo u('blog/new') ?>">New post</a>
 <hr/>
 
