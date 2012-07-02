@@ -6,7 +6,6 @@ This stub is a basic project showing a blog with:
 - a blog controller
 - **a ReST-interface**
 
-
 It is suitable for a simple web-site containing a bunch of dynamic, database-related pages/forms,
 **and for exposing your data through a ReST-interface**.
 
