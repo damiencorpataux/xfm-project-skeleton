@@ -5,7 +5,6 @@ This stub is a basic project showing a blog with:
 - configured models
 - a blog controller
 
-
 It is suitable for a simple web-site containing a bunch of dynamic, database-related pages/forms.
 
 
