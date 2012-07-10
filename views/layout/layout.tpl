@@ -20,10 +20,10 @@
 <?php endforeach ?>
         <!-- Le fav and touch icons -->
         <link rel="shortcut icon" href="">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo u('assets/bootstrap.css/ico/apple-touch-icon-144-precomposed.png') ?>">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo u('assets/bootstrap.css/ico/apple-touch-icon-114-precomposed.png') ?>">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo u('assets/bootstrap.css/ico/apple-touch-icon-72-precomposed.png') ?>">
+        <link rel="apple-touch-icon-precomposed" href="<?php echo u('assets/bootstrap.css/ico/apple-touch-icon-57-precomposed.png') ?>">
     </head>
     <body>
         <div class="navbar navbar-fixed-top">
@@ -34,12 +34,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="#">
+                    <a class="brand" href="<?php echo u() ?>">
                         App template
                     </a>
                     <ul class="nav pull-right">
 <?php echo xView::load('i18n/lang-selection-dropdown') ?>
                     </ul>
+                    <!-- Uncomment and modify to add top-right navigation links
                     <div class="nav-collapse pull-right">
                         <ul class="nav">
                             <li class="active"><a href="#">Home</a></li>
@@ -47,17 +48,13 @@
                             <li><a href="#contact">Impressum</a></li>
                         </ul>
                     </div>
+                    -->
                 </div>
             </div>
         </div>
         <div class="clearfix"/>
         <div class="container" style="margin-top:75px">
-<?php if (is_array($d['messages'])) foreach ($d['messages'] as $type => $message): ?>
-            <div class="alert <?php echo $type ?>">
-                <button class="close" data-dismiss="alert">×</button>
-                <?php echo $message ?>
-            </div>
-<?php endforeach ?>
+            <?php echo xView::load('layout/messages') ?>
             <?php echo $d['html']['content'] ?>
             <?php echo xView::load('layout/footer') ?>
         </div>
