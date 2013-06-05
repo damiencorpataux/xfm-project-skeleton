@@ -13,4 +13,4 @@ It is suitable for a simple web-site containing a bunch of dynamic, database-rel
 How to setup mysql database
 ===========================
 
-Please refer to [database-mysql instructions](https://github.com/damiencorpataux/xfm-project-skeleton/blob/database-mysql/README.md#how-to-setup-mysql-database)
+Please refer to [database-mysql instructions](https://github.com/damiencorpataux/xfm-project-skeleton/blob/database-mysql/README.md#how-to-setup-mysql-database).
