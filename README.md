@@ -13,23 +13,4 @@ It is suitable for a simple web-site containing a bunch of dynamic, database-rel
 How to setup mysql database
 ===========================
 
-**First:**
-- either create a database user according **default.ini** db configuration
-- or change **default.ini** db configured user and password to suit
-  the existing database user you want to use
-
-**Then:**
-```bash
-cd /var/www/app/scripts/deploy
-php database.php
-```
-
-**Finally:**
-- Point your browser to your application URL (eg. http://localhost/app/public if you followed the wiki chapter [Deploying basic-project stub](https://github.com/damiencorpataux/xfm-project-skeleton/wiki)).
-
-
-Notes
-=====
-
-Look at the **sql/** directory, containing the sql files to execute in order to create the database.
-Filenames are prefixed with a number that defines execution order.
+Please refer to [database-mysql instructions](https://github.com/damiencorpataux/xfm-project-skeleton/blob/database-mysql/README.md#how-to-setup-mysql-database)
