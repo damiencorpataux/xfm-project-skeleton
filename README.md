@@ -68,6 +68,7 @@ sudo apache2ctl graceful
 # modify your controllers and views (adding/changing/deleting translations strings)
 # and start over at step 1 !
 ```
+**Note:** make sure you have read/write permissions on your i18n/mo/ directory.
 
 
 .po files header
