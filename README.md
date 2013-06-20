@@ -6,6 +6,8 @@ This stub is a basic project with:
 
 It is suitable for a simple web-site containing a bunch of pages.
 
+#### [Try it](http://demo.mien.ch/xfm/basic-project/)
+
 
 How to install
 ==============
