@@ -1,3 +1,5 @@
+#### [Try it](http://demo.mien.ch/xfm/i18n/)
+
 This stub is a basic project with:
 
 - basic-project features
