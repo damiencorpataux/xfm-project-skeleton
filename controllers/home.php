@@ -9,9 +9,18 @@ class HomeController extends xWebController {
     function run_tests() {
         $dir = xContext::$basepath.'/unittests/';
         $command = "cd {$dir} && php phpunit.php units/Calculator.php";
+        // Bad guy protection
+        $min = 5; // seconds
+        $interval = mktime()-$this->session('last'); 
+        if ($interval < $min) return array(
+            'command' => $command,
+            'output' => "Minimum {$min} seconds between runs, please.",
+            'status' => 1
+        );
+        $this->session('last', mktime());
         // Load avg check, to prevent system overload
         $load = sys_getloadavg();
-        if ($load[0] > 1.5) return array(
+        if ($load[0] > 2.5) return array(
             'command' => $command,
             'output' => 'Server is too busy to run unittests right now. Please try again in a few minutes !',
             'status' => 1
