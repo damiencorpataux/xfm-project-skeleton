@@ -19,5 +19,5 @@ Pointing your browser to your application public directory
 should [display some tests running](http://demo.mien.ch/xfm/unittesting/).
 
 The receipts on unittesting should give you the tips you need 
-on [[writing|https://github.com/damiencorpataux/xfm-php/wiki/Cookbook-create-unittest]]
-and [[running|https://github.com/damiencorpataux/xfm-php/wiki/Cookbook-run-unittest]] tests.
+on [writing](https://github.com/damiencorpataux/xfm-php/wiki/Cookbook-create-unittest)
+and [running](https://github.com/damiencorpataux/xfm-php/wiki/Cookbook-run-unittest) tests.
