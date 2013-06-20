@@ -1,13 +1,23 @@
-This stub is a basic project with:
+#### [Try it](http://demo.mien.ch/xfm/unittesting/)
+
+This stub is a unittesting project with:
 
 - a home controller
-- an error controller for exception handling
+- a calculator controller
+- a **unittest** for the calculator controller
 
-
-It is suitable for a simple web-site containing a bunch of pages.
+It is suitable for applications that must grant non-regression.
 
 
 How to install
 ==============
 
-Please refer to the [wiki](https://github.com/damiencorpataux/xfm-project-skeleton/wiki) for installation steps.
+Simply get a [basic-project application running](https://github.com/damiencorpataux/xfm-project-skeleton/wiki)
+and ```git checkout unittesting```.
+
+Pointing your browser to your application public directory
+should [display some tests running](http://demo.mien.ch/xfm/unittesting/).
+
+The receipts on unittesting should give you the tips you need 
+on [[writing|https://github.com/damiencorpataux/xfm-php/wiki/Cookbook-create-unittest]]
+and [[running|https://github.com/damiencorpataux/xfm-php/wiki/Cookbook-run-unittest]] tests.
