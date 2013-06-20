@@ -35,6 +35,7 @@ $(document).ready(function() {
 });
 </script>
 
+<hr>
 
 <h2>What is it all for ?</h2>
 <p>
@@ -49,7 +50,7 @@ $(document).ready(function() {
 <div class="thumbnail">
   <h3>Calculator</h3>
   <input type="text" id="numbers" value="1 2 3" style="text-align:right;font-size:20px">
-  <span class="lead">&nbsp;is <span id="sum"></span></span>
+  <span class="lead">&nbsp;= <span id="sum"></span></span>
 </div>
 
 <script>
