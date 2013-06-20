@@ -27,9 +27,9 @@
 <script>
 $(document).ready(function() {
     $.getJSON('api/home/run_tests', function(data) {
-        $('.unittests-command').html(data.command);
+        $('.unittests-command').html(data.result.command);
         $('.unittests-output')
-            .html(data.output)
+            .html(data.result.output)
             .addClass(data.status ? 'alert-error' : 'alert-success');
     });
 });
@@ -50,13 +50,22 @@ $(document).ready(function() {
   <h3>Calculator</h3>
   <input type="text" id="numbers" value="1 2 3" style="text-align:right;font-size:20px">
   <span class="lead">&nbsp;is <span id="sum"></span></span>
+  <h3>Debug</h3>
+  <pre id="debug"></pre>
 </div>
 
 <script>
 $(document).ready(function() {
     $('#numbers').on('keyup', function() {
         $.getJSON('api/calculator/add?numbers='+$(this).val(), function(data) {
-            $('#sum').html(data)
+            $('#sum').html(data.result);
+            // Backtrace
+            $('#debug').html(null);
+            $.each(data.trace, function(i, t) {
+                $('#debug').append(
+                    [t.class, '::', t.function, '()', ' on line ', t.line, "\n"].join('')
+                );
+            })
         });
     }).focus().trigger('keyup');
 });

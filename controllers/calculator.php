@@ -8,8 +8,8 @@ class CalculatorController extends xWebController {
      * An array of numbers can be given, or a space-separated list.
      */
     function add() {
-        $numbers = @$this->params['numbers'];
+        $numbers = $this->params['numbers'];
         $numbers = is_array($numbers) ? $numbers : explode(' ', $numbers);
-        return @array_sum($numbers);
+        return array_sum($numbers);
     }
 }
