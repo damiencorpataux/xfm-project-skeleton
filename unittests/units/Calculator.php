@@ -4,7 +4,7 @@
  * Tests the Calculator controller.
  * @package unittests
  */
-class Example extends xPHPUnit_Framework_TestCase {
+class Calculator extends xPHPUnit_Framework_TestCase {
 
     function test_add() {
         // Tests definition array: array('expected', 'numbers array')
@@ -14,10 +14,10 @@ class Example extends xPHPUnit_Framework_TestCase {
             array(-6, array(-1, -2, -3)),
             array(0, array(0)),
             array(0, array()),
-            array(null, null),
-            array(null, 1),
-            array(null, 'string'),
-            array(null, false),
+            array(0, null),
+            array(1, 1),
+            array(0, 'string'),
+            array(0, false),
         );
         foreach ($tests as $test) $this->assertSame(
             $test[0],
