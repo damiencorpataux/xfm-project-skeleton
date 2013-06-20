@@ -8,7 +8,7 @@ class HomeController extends xWebController {
 
     function run_tests() {
         $dir = xContext::$basepath.'/unittests/';
-        $command = "cd {$dir} && php phpunit.php units/Calculator.php";
+        $command = "cd {$dir} && php phpunit.php units";
         // Bad guy protection
         $min = 5; // seconds
         $interval = mktime()-$this->session('last'); 

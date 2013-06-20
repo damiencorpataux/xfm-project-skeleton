@@ -26,7 +26,7 @@ class Calculator extends xPHPUnit_Framework_TestCase {
             ))->add(),
             sprintf(
                 'Summing: expecting %s while summing %s',
-                $test[0], implode(', ', $test[1])
+                @$test[0], @implode(', ', $test[1])
             )
         );
     }
