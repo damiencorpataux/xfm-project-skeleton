@@ -1,9 +1,13 @@
-Build a web app, easily.
-========================
+This stub is a basic project with:
 
-* Please refer to our <a href="https://github.com/damiencorpataux/xfm-project-skeleton/wiki">wiki page</a>.
-* Test the live demos of projects stubs:
-  * <a href="http://demo.mien.ch/xfm/basic-project/" target="_blank">basic-project</a>
-  * <a href="http://demo.mien.ch/xfm/i18n/" target="_blank">i18n</a>
-  * <a href="http://demo.mien.ch/xfm/database-mysql/" target="_blank">database-mysql</a>
-  * <a href="http://demo.mien.ch/xfm/database-mysql-rest-front/" target="_blank">database-mysql-rest-front</a>
+- a home controller
+- an error controller for exception handling
+
+
+It is suitable for a simple web-site containing a bunch of pages.
+
+
+How to install
+==============
+
+Please refer to the [wiki](https://github.com/damiencorpataux/xfm-project-skeleton/wiki) for installation steps.
