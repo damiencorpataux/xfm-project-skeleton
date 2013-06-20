@@ -10,7 +10,7 @@
 </p>
 
 <p>
-  The receipts on unittesting will give you the tips you need on <a href="https://github.com/damiencorpataux/xfm-php/wiki/Cookbook-create-unittes">writing</a> and <a href="https://github.com/damiencorpataux/xfm-php/wiki/cookbook-run-unittest">running</a> tests.
+  The receipts on unittesting will give you the tips you need on <a href="https://github.com/damiencorpataux/xfm-php/wiki/Cookbook-create-unittest">writing</a> and <a href="https://github.com/damiencorpataux/xfm-php/wiki/cookbook-run-unittest">running</a> tests.
 </p>
 
 <h2>Live tests running</h2>
