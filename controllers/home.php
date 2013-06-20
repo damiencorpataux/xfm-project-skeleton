@@ -8,9 +8,6 @@ class HomeController extends xWebController {
 
     function run_tests() {
         $dir = xContext::$basepath.'/unittests/';
-<<<<<<< Updated upstream
-        $command = "cd {$dir} && php phpunit.php units/Calculator.php";
-=======
         $command = "cd {$dir} && php phpunit.php units";
         // Bad guy protection
         $min = 5; // seconds
@@ -29,7 +26,6 @@ class HomeController extends xWebController {
             'status' => 1
         );
         // Actual tests run
->>>>>>> Stashed changes
         exec($command, $output, $status);
         $output = implode("\n", $output);
         return compact('command', 'output', 'status');
